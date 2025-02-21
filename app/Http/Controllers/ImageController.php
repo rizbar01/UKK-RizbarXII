@@ -56,9 +56,9 @@ class ImageController extends Controller
     {
         $image = Images::find($id);
         $comments = Comment::all();
-        $like = Like::all();
 
-        return view('picturePost.show', compact('image', 'comments', 'like'));
+
+        return view('picturePost.show', compact('image', 'comments',));
     }
 
     /**
